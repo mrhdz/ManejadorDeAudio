@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="60dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reproducir_archivos_de_audio"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_click"
+            android:contentDescription="@string/icono_de_clic"
+            android:onClick="SonidoClic"
+            />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_alarm"
+            android:contentDescription="@string/icono_de_alarma"
+            android:onClick="SonidoAlarma"
+            />
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_explotion"
+            android:contentDescription="@string/icono_de_explosion"
+            android:onClick="SonidoExplosion"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opciones_de_grabaci_n"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/bGrabar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_record"
+            android:contentDescription="@string/icono_iniciar_grabaci_n"
+            android:onClick="Grabar"
+            />
+
+        <ImageButton
+            android:id="@+id/bDetenerG"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_stop"
+            android:contentDescription="@string/icono_detener_grabaci_n"
+            android:onClick="DetenerGrabacion"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/opciones_de_reproducci_n"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/bReproducir"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_play"
+            android:contentDescription="@string/icono_de_reproducir"
+            android:onClick="Reproducir"
+            />
+
+        <ImageButton
+            android:id="@+id/bDetenerR"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_stop2"
+            android:contentDescription="@string/detener_reproducci_n"
+            android:onClick="DetenerReproduccion"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRutas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Ruta de Archivo"
+        android:textSize="24sp"
+        android:textColor="#F00"/>
+
+</LinearLayout>

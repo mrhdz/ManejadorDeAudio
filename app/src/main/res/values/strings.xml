@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LH-ManejadorAudio</string>
+    <string name="reproducir_archivos_de_audio">Reproducir Archivos de Audio</string>
+    <string name="icono_de_clic">Icono de Clic</string>
+    <string name="icono_de_alarma">Icono de Alarma</string>
+    <string name="icono_de_explosion">Icono de Explosion</string>
+    <string name="opciones_de_reproducci_n">Opciones de Reproducción</string>
+    <string name="opciones_de_grabaci_n">Opciones de Grabación</string>
+    <string name="icono_iniciar_grabaci_n">Icono Iniciar Grabación</string>
+    <string name="icono_detener_grabaci_n">Icono Detener Grabación</string>
+    <string name="icono_de_reproducir">Icono de Reproducir</string>
+    <string name="detener_reproducci_n">Detener Reproducción</string>
+</resources>
